@@ -1,2 +1,10 @@
 <style>iframe{border-style: none;  }:root{background-color: black;}</style>
 <iframe src="http://rawstatus.p-xyz.eu:5001/status/app_commands" height="100%" width="100%"></iframe>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.protocol === 'https:') {
+            // Redirect to the HTTP version of the URL
+            window.location.href = 'http://bot.p-xyz.eu/commands';
+        }
+    });
+</script>
